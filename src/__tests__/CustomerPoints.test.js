@@ -1,41 +1,31 @@
+// __tests__/CustomerPoints.test.jsx
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import '@testing-library/jest-dom/extend-expect'
 import CustomerPoints from '../components/CustomerPoints/CustomerPoints';
 
-// Mock the fetchTransactions API call
-jest.mock('../api/transactions');
-
-
 beforeAll(() => {
-    global.console = {
-      ...console,
-      error: jest.fn(),
-    };
-  });
-  
-  afterAll(() => {
-    global.console.error = console.error;
-  });
-  
+  global.originalConsoleError = console.error;
+  console.error = jest.fn();
+});
 
-describe('CustomerPoints Component', () => {
-  test('renders customer points correctly', () => {
-    // Arrange: Set up props
-    const props = {
-      customerName: 'Prashant',
-      points: 150,
-      month: 'August',
-      amountBreakdown: 'Purchase of electronics'
-    };
+afterAll(() => {
+  console.error = global.originalConsoleError;
+});
 
-    // Act: Render the component with props
-    render(<CustomerPoints {...props} />);
+describe('CustomerPoints', () => {
+  const mockProps = {
+    customerName: 'Prashant Kumar',
+    points: 120,
+    month: '2024-07',
+    amountBreakdown: '2x$20 + 1x$50',
+  };
 
-    // Assert: Check if elements are rendered with correct content
-    expect(screen.getByText(/Prashant/i)).toBeInTheDocument();
-    expect(screen.getByText(/Month: August/i)).toBeInTheDocument();
-    expect(screen.getByText(/Total Points: 150/i)).toBeInTheDocument();
-    expect(screen.getByText(/Amount Breakdown: Purchase of electronics/i)).toBeInTheDocument();
+  test('displays customer points information', () => {
+    render(<CustomerPoints {...mockProps} />);
+
+    expect(screen.getByText('Prashant Kumar')).toBeInTheDocument();
+    expect(screen.getByText('Month: 2024-07')).toBeInTheDocument();
+    expect(screen.getByText('Total Points: 120')).toBeInTheDocument();
+    expect(screen.getByText('Amount Breakdown: 2x$20 + 1x$50')).toBeInTheDocument();
   });
 });

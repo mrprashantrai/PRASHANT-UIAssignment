@@ -1,31 +1,38 @@
+// __tests__/MonthlyPoints.test.jsx
 import React from 'react';
-import { render } from '@testing-library/react';
+import { render, screen, fireEvent } from '@testing-library/react';
 import MonthlyPoints from '../components/MonthlyPoints/MonthlyPoints';
 
 beforeAll(() => {
-  global.console = {
-    ...console,
-    error: jest.fn(),
-  };
+  global.originalConsoleError = console.error;
+  console.error = jest.fn();
 });
 
 afterAll(() => {
-  global.console.error = console.error;
+  console.error = global.originalConsoleError;
 });
 
+describe('MonthlyPoints', () => {
+  const mockData = {
+    month: '2024-07',
+    totalAmount: 270,
+    totalPoints: 170,
+    customerPoints: [
+      { customerId: 1, customerName: 'Prashant Kumar', totalPoints: 120 },
+      { customerId: 2, customerName: 'Narendra Singh', totalPoints: 150 },
+    ],
+    onCustomerClick: jest.fn(),
+  };
 
-test('renders MonthlyPoints with given customer details', () => {
-  const customerPoints = [
-    { customerId: 1, customerName: 'Alice Johnson', totalPoints: 150 },
-    { customerId: 2, customerName: 'Bob Smith', totalPoints: 100 },
-  ];
+  test('displays month summary and customer points', () => {
+    render(<MonthlyPoints {...mockData} />);
 
-  const { getByText } = render(<MonthlyPoints customerPoints={customerPoints} />);
-  
-  expect(getByText(/Customer ID: 1/)).toBeInTheDocument();
-  expect(getByText(/Name: Alice Johnson/)).toBeInTheDocument();
-  expect(getByText(/Total Points: 150/)).toBeInTheDocument();
-  expect(getByText(/Customer ID: 2/)).toBeInTheDocument();
-  expect(getByText(/Name: Bob Smith/)).toBeInTheDocument();
-  expect(getByText(/Total Points: 100/)).toBeInTheDocument();
+    expect(screen.getByText('Month Summary')).toBeInTheDocument();
+    expect(screen.getByText('Total Amount: $270.00')).toBeInTheDocument();
+    expect(screen.getByText('Total Points: 170')).toBeInTheDocument();
+    expect(screen.getByText('Total Points Per Customer')).toBeInTheDocument();
+    expect(screen.getByText('Prashant Kumar')).toBeInTheDocument();
+    expect(screen.getByText('Narendra Singh')).toBeInTheDocument();
+  });
+
 });
