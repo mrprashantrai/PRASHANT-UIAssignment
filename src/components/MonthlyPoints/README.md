@@ -1,11 +1,38 @@
 # MonthlyPoints Component
 
-## Description
-Displays total points for each customer including their names.
+## Overview
 
-## Props
-- `customerPoints` (array): Array of customer points data, each containing `customerId`, `customerName`, and `totalPoints`.
+The `MonthlyPoints` component shows a summary of total points and amounts for each customer for the selected month. It includes a button to view detailed customer points.
 
-## Example Usage
+## Features
 
-<MonthlyPoints customerPoints={[{ customerId: 1, customerName: 'Prashant Kumar', totalPoints: 150 }, { customerId: 2, customerName: 'Narendra Singh', totalPoints: 100 }]} />
+- **Month Summary**: Displays total amount and total points for the month.
+- **Customer Points**: Lists total points per customer.
+- **Interactions**: Users can click to view detailed points for each customer.
+
+## Usage
+
+```jsx
+import React from 'react';
+import MonthlyPoints from './MonthlyPoints';
+
+const App = () => {
+  const handleCustomerClick = (customerId) => {
+    // Handle customer click
+  };
+
+  return (
+    <MonthlyPoints
+      month="2024-07"
+      totalAmount={270}
+      totalPoints={170}
+      customerPoints={[
+        { customerId: 1, customerName: 'Prashant Kumar', totalPoints: 120 },
+        { customerId: 2, customerName: 'Narendra Singh', totalPoints: 150 },
+      ]}
+      onCustomerClick={handleCustomerClick}
+    />
+  );
+};
+
+export default App;

@@ -1,14 +1,30 @@
 # CustomerPoints Component
 
-## Description
-Displays reward points for a customer for a given month along with the customer's name and amount breakdown.
+## Overview
 
-## Props
-- `customerName` (string): Name of the customer.
-- `points` (number): Total points earned.
-- `month` (string): The month for which the points are displayed.
-- `amountBreakdown` (string): Detailed breakdown of the amount used for calculating points.
+The `CustomerPoints` component displays detailed points information for a specific customer for the selected month.
 
-## Example Usage
+## Features
 
-<CustomerPoints customerName="Prashant Kumar" points={90} month="August 2024" amountBreakdown="2x$20 + 1x$50" />
+- **Customer Name**: Shows the name of the customer.
+- **Total Points**: Displays the total points earned by the customer.
+- **Amount Breakdown**: Provides a breakdown of how the amount was used to calculate points.
+
+## Usage
+
+```jsx
+import React from 'react';
+import CustomerPoints from './CustomerPoints';
+
+const App = () => (
+  <div>
+    <CustomerPoints
+      customerName="Prashant Kumar"
+      points={120}
+      month="2024-07"
+      amountBreakdown="2x$20 + 1x$50"
+    />
+  </div>
+);
+
+export default App;
