@@ -1,0 +1,80 @@
+/* Container for the entire MonthlyTransactions component */
+.monthly-transactions-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Styling for the header */
+  .monthly-transactions-container h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Styling for the MonthSelector */
+  .month-selector {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Styling for the select dropdown */
+  .month-selector select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Styling for the summary section */
+  .summary {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  /* Styling for the month header */
+  .month-header {
+    text-align: center; /* Center-aligns the heading */
+    margin-bottom: 20px;
+  }
+  
+  /* Styling for the card container */
+  .transaction-list {
+    display: flex;
+    flex-wrap: wrap; /* Allows cards to wrap onto multiple lines if needed */
+    gap: 20px; /* Space between cards */
+    justify-content: space-between; /* Aligns cards with space between them */
+  }
+  
+  /* Styling for individual customer cards */
+  .transaction-card {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(33.333% - 20px); /* Adjust to fit 3 cards per row with spacing */
+    box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+  }
+  
+  /* Styling for individual transaction details */
+  .transaction-detail {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 10px 0;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Styling for transaction details */
+  .transaction-detail p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #555;
+  }
+  

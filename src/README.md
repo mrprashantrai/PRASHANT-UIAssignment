@@ -4,9 +4,9 @@
 This application calculates and displays reward points for customers based on their transaction data. It uses React to build the UI and simulates an API call to fetch transaction data.
 
 ## Components
-- `CustomerPoints`: Displays the points earned by a customer for a given month.
-- `TransactionTable`: Fetches transactions and calculates points.
-- `MonthlyPoints`: Displays total points for each customer.
+- **TransactionList/**: Displays a list of transactions for each customer.
+- **MonthlyTransactions/**: Manages and displays transactions for a selected month.
+- **MonthSelector/**: Provides a dropdown to select the month for filtering transactions.
 
 ## Setup and Installation
 1. Clone the repository.

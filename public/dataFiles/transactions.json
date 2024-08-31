@@ -1,0 +1,382 @@
+{
+  "transactions": [
+    {
+      "customerId": 1,
+      "customerName": "Prashant Kumar",
+      "date": "2024-06-01",
+      "amount": 120,
+      "points": 90
+    },
+    {
+      "customerId": 1,
+      "customerName": "Prashant Kumar",
+      "date": "2024-06-15",
+      "amount": 60,
+      "points": 40
+    },
+    {
+      "customerId": 1,
+      "customerName": "Prashant Kumar",
+      "date": "2024-07-15",
+      "amount": 80,
+      "points": 30
+    },
+    {
+      "customerId": 1,
+      "customerName": "Prashant Kumar",
+      "date": "2024-07-25",
+      "amount": 40,
+      "points": 20
+    },
+    {
+      "customerId": 1,
+      "customerName": "Prashant Kumar",
+      "date": "2024-10-05",
+      "amount": 100,
+      "points": 60
+    },
+    {
+      "customerId": 1,
+      "customerName": "Prashant Kumar",
+      "date": "2024-10-22",
+      "amount": 50,
+      "points": 30
+    },
+    {
+      "customerId": 1,
+      "customerName": "Prashant Kumar",
+      "date": "2024-11-20",
+      "amount": 70,
+      "points": 40
+    },
+    {
+      "customerId": 1,
+      "customerName": "Prashant Kumar",
+      "date": "2024-11-28",
+      "amount": 30,
+      "points": 20
+    },
+    {
+      "customerId": 2,
+      "customerName": "Narendra Singh",
+      "date": "2024-07-01",
+      "amount": 150,
+      "points": 130
+    },
+    {
+      "customerId": 2,
+      "customerName": "Narendra Singh",
+      "date": "2024-07-20",
+      "amount": 50,
+      "points": 40
+    },
+    {
+      "customerId": 2,
+      "customerName": "Narendra Singh",
+      "date": "2024-08-10",
+      "amount": 60,
+      "points": 10
+    },
+    {
+      "customerId": 2,
+      "customerName": "Narendra Singh",
+      "date": "2024-08-22",
+      "amount": 80,
+      "points": 60
+    },
+    {
+      "customerId": 2,
+      "customerName": "Narendra Singh",
+      "date": "2024-10-15",
+      "amount": 110,
+      "points": 90
+    },
+    {
+      "customerId": 2,
+      "customerName": "Narendra Singh",
+      "date": "2024-10-25",
+      "amount": 40,
+      "points": 30
+    },
+    {
+      "customerId": 2,
+      "customerName": "Narendra Singh",
+      "date": "2024-11-30",
+      "amount": 70,
+      "points": 20
+    },
+    {
+      "customerId": 2,
+      "customerName": "Narendra Singh",
+      "date": "2024-11-15",
+      "amount": 90,
+      "points": 50
+    },
+    {
+      "customerId": 3,
+      "customerName": "Ananya Patel",
+      "date": "2024-05-20",
+      "amount": 200,
+      "points": 150
+    },
+    {
+      "customerId": 3,
+      "customerName": "Ananya Patel",
+      "date": "2024-05-28",
+      "amount": 50,
+      "points": 20
+    },
+    {
+      "customerId": 3,
+      "customerName": "Ananya Patel",
+      "date": "2024-06-25",
+      "amount": 90,
+      "points": 40
+    },
+    {
+      "customerId": 3,
+      "customerName": "Ananya Patel",
+      "date": "2024-06-10",
+      "amount": 30,
+      "points": 10
+    },
+    {
+      "customerId": 3,
+      "customerName": "Ananya Patel",
+      "date": "2024-10-10",
+      "amount": 150,
+      "points": 120
+    },
+    {
+      "customerId": 3,
+      "customerName": "Ananya Patel",
+      "date": "2024-10-22",
+      "amount": 70,
+      "points": 40
+    },
+    {
+      "customerId": 3,
+      "customerName": "Ananya Patel",
+      "date": "2024-11-18",
+      "amount": 80,
+      "points": 35
+    },
+    {
+      "customerId": 3,
+      "customerName": "Ananya Patel",
+      "date": "2024-11-05",
+      "amount": 40,
+      "points": 25
+    },
+    {
+      "customerId": 4,
+      "customerName": "Ravi Sharma",
+      "date": "2024-07-30",
+      "amount": 75,
+      "points": 25
+    },
+    {
+      "customerId": 4,
+      "customerName": "Ravi Sharma",
+      "date": "2024-07-15",
+      "amount": 45,
+      "points": 15
+    },
+    {
+      "customerId": 4,
+      "customerName": "Ravi Sharma",
+      "date": "2024-08-15",
+      "amount": 130,
+      "points": 110
+    },
+    {
+      "customerId": 4,
+      "customerName": "Ravi Sharma",
+      "date": "2024-08-05",
+      "amount": 60,
+      "points": 25
+    },
+    {
+      "customerId": 4,
+      "customerName": "Ravi Sharma",
+      "date": "2024-10-20",
+      "amount": 90,
+      "points": 50
+    },
+    {
+      "customerId": 4,
+      "customerName": "Ravi Sharma",
+      "date": "2024-10-05",
+      "amount": 40,
+      "points": 30
+    },
+    {
+      "customerId": 4,
+      "customerName": "Ravi Sharma",
+      "date": "2024-11-12",
+      "amount": 110,
+      "points": 80
+    },
+    {
+      "customerId": 4,
+      "customerName": "Ravi Sharma",
+      "date": "2024-11-25",
+      "amount": 50,
+      "points": 25
+    },
+    {
+      "customerId": 5,
+      "customerName": "Amit Verma",
+      "date": "2024-06-10",
+      "amount": 55,
+      "points": 5
+    },
+    {
+      "customerId": 5,
+      "customerName": "Amit Verma",
+      "date": "2024-06-20",
+      "amount": 45,
+      "points": 15
+    },
+    {
+      "customerId": 5,
+      "customerName": "Amit Verma",
+      "date": "2024-08-01",
+      "amount": 110,
+      "points": 80
+    },
+    {
+      "customerId": 5,
+      "customerName": "Amit Verma",
+      "date": "2024-08-15",
+      "amount": 40,
+      "points": 25
+    },
+    {
+      "customerId": 5,
+      "customerName": "Amit Verma",
+      "date": "2024-10-01",
+      "amount": 90,
+      "points": 60
+    },
+    {
+      "customerId": 5,
+      "customerName": "Amit Verma",
+      "date": "2024-10-20",
+      "amount": 50,
+      "points": 30
+    },
+    {
+      "customerId": 5,
+      "customerName": "Amit Verma",
+      "date": "2024-11-15",
+      "amount": 70,
+      "points": 40
+    },
+    {
+      "customerId": 5,
+      "customerName": "Amit Verma",
+      "date": "2024-11-01",
+      "amount": 80,
+      "points": 45
+    },
+    {
+      "customerId": 6,
+      "customerName": "Sonia Mehta",
+      "date": "2024-09-05",
+      "amount": 95,
+      "points": 45
+    },
+    {
+      "customerId": 6,
+      "customerName": "Sonia Mehta",
+      "date": "2024-09-15",
+      "amount": 55,
+      "points": 25
+    },
+    {
+      "customerId": 6,
+      "customerName": "Sonia Mehta",
+      "date": "2024-09-25",
+      "amount": 60,
+      "points": 30
+    },
+    {
+      "customerId": 6,
+      "customerName": "Sonia Mehta",
+      "date": "2024-10-25",
+      "amount": 85,
+      "points": 55
+    },
+    {
+      "customerId": 6,
+      "customerName": "Sonia Mehta",
+      "date": "2024-10-10",
+      "amount": 45,
+      "points": 25
+    },
+    {
+      "customerId": 6,
+      "customerName": "Sonia Mehta",
+      "date": "2024-11-30",
+      "amount": 60,
+      "points": 25
+    },
+    {
+      "customerId": 6,
+      "customerName": "Sonia Mehta",
+      "date": "2024-11-20",
+      "amount": 35,
+      "points": 15
+    },
+    {
+      "customerId": 7,
+      "customerName": "Raj Patel",
+      "date": "2024-09-12",
+      "amount": 120,
+      "points": 90
+    },
+    {
+      "customerId": 7,
+      "customerName": "Raj Patel",
+      "date": "2024-09-20",
+      "amount": 60,
+      "points": 25
+    },
+    {
+      "customerId": 7,
+      "customerName": "Raj Patel",
+      "date": "2024-09-25",
+      "amount": 85,
+      "points": 35
+    },
+    {
+      "customerId": 7,
+      "customerName": "Raj Patel",
+      "date": "2024-10-30",
+      "amount": 95,
+      "points": 55
+    },
+    {
+      "customerId": 7,
+      "customerName": "Raj Patel",
+      "date": "2024-10-15",
+      "amount": 40,
+      "points": 20
+    },
+    {
+      "customerId": 7,
+      "customerName": "Raj Patel",
+      "date": "2024-11-22",
+      "amount": 75,
+      "points": 25
+    },
+    {
+      "customerId": 7,
+      "customerName": "Raj Patel",
+      "date": "2024-11-10",
+      "amount": 50,
+      "points": 15
+    }
+  ]
+}
